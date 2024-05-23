@@ -6,6 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>My Favorite Song</title>
 	<style>
+		* {
+			::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+		}
 		body {
 			background-color: rgb(255, 145, 164);
 		}
@@ -18,7 +24,7 @@
 		.upper p {
 			font-size: 3rem;
 			font-weight: 900;
-			color: rgb(255, 0, 0);
+			color: rgb(228, 37, 69);
 		}
 
 		.upper span {
@@ -79,6 +85,20 @@
 			gap: 50px;
 			padding: 0 5rem;
 		}
+
+		@media (max-width: 350px) {
+		.wrap {
+		grid-template-columns: repeat(1, 1fr);
+		}
+		}
+
+		@media (max-width: 766px) {
+			.wrap {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		
 	</style>
 </head>
 
@@ -140,7 +160,7 @@
 
 		<!-- Sixth Song -->
 		<div class="song-1">
-			<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
+			<img src="./assets/img/img6.jpeg" alt="img song-1" class="image" />
 			<div class="div2">
 				<h2>Sweet - Cigarettes After Sex </h2>
 				<p>Personal Rate: <span>9/10💌</span></p>
@@ -148,33 +168,33 @@
 			</div>
 		</div>
 
-		<!-- Sixth Song -->
+		<!-- Seventh Song -->
 		<div class="song-1">
-			<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
+			<img src="./assets/img/img7.img" alt="img song-1" class="image" />
 			<div class="div2">
-				<h2>Sweet - Cigarettes After Sex </h2>
+				<h2>This Town - Niall Horan </h2>
 				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>I want you to know, I love you the most</q>
+				<q>everything comes back to you</q>
 			</div>
 		</div>
 
-		<!-- Sixth Song -->
+		<!-- Eight Song -->
 		<div class="song-1">
-			<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
+			<img src="./assets/img/img8.jpeg" alt="img song-1" class="image" />
 			<div class="div2">
-				<h2>Sweet - Cigarettes After Sex </h2>
-				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>I want you to know, I love you the most</q>
+				<h2>About You - The 1975</h2>
+				<p>Personal Rate: <span>8.5/10💌</span></p>
+				<q>do you think I have forgotten?</q>
 			</div>
 		</div>
 
-		<!-- Sixth Song -->
+		<!-- Nineth Song -->
 		<div class="song-1">
-			<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
+			<img src="./assets/img/img9.jpeg" alt="img song-1" class="image" />
 			<div class="div2">
-				<h2>Sweet - Cigarettes After Sex </h2>
-				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>I want you to know, I love you the most</q>
+				<h2>Little Bit Better - Caleb Hearn </h2>
+				<p>Personal Rate: <span>9.5/10💌</span></p>
+				<q>please stay love me through the weather</q>
 			</div>
 		</div>
 	</div>
