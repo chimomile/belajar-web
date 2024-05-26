@@ -12,8 +12,14 @@
 				height: 0;
 			}
 		}
+
 		body {
 			background-color: rgb(255, 145, 164);
+		}
+
+		#hero {
+			width: 100%;
+			height: 100vh;
 		}
 
 		.upper {
@@ -86,118 +92,138 @@
 			padding: 0 5rem;
 		}
 
-		@media (max-width: 350px) {
-		.wrap {
-		grid-template-columns: repeat(1, 1fr);
-		}
+		/* untuk hp */
+		@media (min-width: 0px) and (max-width: 450px) {
+			#hero {
+				max-width: 100%;
+				min-height: 100vh;
+			}
+
+			.wrap {
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				gap: 20px;
+				padding: 0;
+			}
+			.div2 h2{
+				font-size: 1rem;
+			}
 		}
 
-		@media (max-width: 766px) {
+		/* untuk tablet */
+		@media (max-width: 766px) and (min-width: 451px) {
 			.wrap {
 				grid-template-columns: repeat(2, 1fr);
 			}
 		}
 
-		
+		/* untuk laptop kicil */
+		@media (max-width: 1366px) and (min-width: 767px) {
+			.wrap {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
 	</style>
 </head>
 
 <body>
-	<div class="upper">
-		<p><span>chimomile</span> favorite songs</p>
-	</div>
-	<div class="wrap">
-		<!-- First Song -->
-		<div class="song-1">
-			<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Give Me Your Forever - Zack Tabudlo</h2>
-				<p>Personal Rate: <span>8.5/10💌</span></p>
-				<q>I want you to know, I love you the most</q>
-			</div>
+	<section id="hero">
+		<div class="upper">
+			<p><span>chimomile</span> favorite songs</p>
 		</div>
+		<div class="wrap">
+			<!-- First Song -->
+			<div class="song-1">
+				<img src="./assets/img/song-1.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Give Me Your Forever - Zack Tabudlo</h2>
+					<p>Personal Rate: <span>8.5/10💌</span></p>
+					<q>I want you to know, I love you the most</q>
+				</div>
+			</div>
 
-		<!-- Second Song -->
-		<div class="song-1">
-			<img src="./assets/img/img2.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Scott Street - Phoebe Bridgers</h2>
-				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>anyway don`t be, a stranger</q>
+			<!-- Second Song -->
+			<div class="song-1">
+				<img src="./assets/img/img2.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Scott Street - Phoebe Bridgers</h2>
+					<p>Personal Rate: <span>9/10💌</span></p>
+					<q>anyway don`t be, a stranger</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Third Song -->
-		<div class="song-1">
-			<img src="./assets/img/img3.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Sparks - Coldplay</h2>
-				<p>Personal Rate: <span>9.5/10💌</span></p>
-				<q>but I promise you this I`ll always look out for you</q>
+			<!-- Third Song -->
+			<div class="song-1">
+				<img src="./assets/img/img3.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Sparks - Coldplay</h2>
+					<p>Personal Rate: <span>9.5/10💌</span></p>
+					<q>but I promise you this I`ll always look out for you</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Fourth Song -->
-		<div class="song-1">
-			<img src="./assets/img/img4.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>To The Bone - Pamungkas</h2>
-				<p>Personal Rate: <span>8/10💌</span></p>
-				<q>hey, I want you to the bone</q>
+			<!-- Fourth Song -->
+			<div class="song-1">
+				<img src="./assets/img/img4.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>To The Bone - Pamungkas</h2>
+					<p>Personal Rate: <span>8/10💌</span></p>
+					<q>hey, I want you to the bone</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Fifth Song -->
-		<div class="song-1">
-			<img src="./assets/img/img5.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Fourth of July - Sufjans Stevens</h2>
-				<p>Personal Rate: <span>10/10💌</span></p>
-				<q>did you get enough love, my little dove <br />
-					why do you cry?</q>
+			<!-- Fifth Song -->
+			<div class="song-1">
+				<img src="./assets/img/img5.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Fourth of July - Sufjans Stevens</h2>
+					<p>Personal Rate: <span>10/10💌</span></p>
+					<q>did you get enough love, my little dove <br />
+						why do you cry?</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Sixth Song -->
-		<div class="song-1">
-			<img src="./assets/img/img6.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Sweet - Cigarettes After Sex </h2>
-				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>I want you to know, I love you the most</q>
+			<!-- Sixth Song -->
+			<div class="song-1">
+				<img src="./assets/img/img6.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Sweet - Cigarettes After Sex </h2>
+					<p>Personal Rate: <span>9/10💌</span></p>
+					<q>I want you to know, I love you the most</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Seventh Song -->
-		<div class="song-1">
-			<img src="./assets/img/img7.img" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>This Town - Niall Horan </h2>
-				<p>Personal Rate: <span>9/10💌</span></p>
-				<q>everything comes back to you</q>
+			<!-- Seventh Song -->
+			<div class="song-1">
+				<img src="./assets/img/img7.img" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>This Town - Niall Horan </h2>
+					<p>Personal Rate: <span>9/10💌</span></p>
+					<q>everything comes back to you</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Eight Song -->
-		<div class="song-1">
-			<img src="./assets/img/img8.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>About You - The 1975</h2>
-				<p>Personal Rate: <span>8.5/10💌</span></p>
-				<q>do you think I have forgotten?</q>
+			<!-- Eight Song -->
+			<div class="song-1">
+				<img src="./assets/img/img8.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>About You - The 1975</h2>
+					<p>Personal Rate: <span>8.5/10💌</span></p>
+					<q>do you think I have forgotten?</q>
+				</div>
 			</div>
-		</div>
 
-		<!-- Nineth Song -->
-		<div class="song-1">
-			<img src="./assets/img/img9.jpeg" alt="img song-1" class="image" />
-			<div class="div2">
-				<h2>Little Bit Better - Caleb Hearn </h2>
-				<p>Personal Rate: <span>9.5/10💌</span></p>
-				<q>please stay love me through the weather</q>
+			<!-- Nineth Song -->
+			<div class="song-1">
+				<img src="./assets/img/img9.jpeg" alt="img song-1" class="image" />
+				<div class="div2">
+					<h2>Little Bit Better - Caleb Hearn </h2>
+					<p>Personal Rate: <span>9.5/10💌</span></p>
+					<q>please stay love me through the weather</q>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 </body>
 
 </html>
